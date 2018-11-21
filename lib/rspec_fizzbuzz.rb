@@ -2,11 +2,11 @@ class Fizzbuzz
     def fizzgame 
         numbers = []
         for num in 1..50
-            if divisible_by_fifteen
+            if divisible_by_fifteen num
                 numbers.push "fizzbuzz"
-            elsif divisible_by_five
+            elsif divisible_by_five num
                 numbers.push "buzz"
-            elsif divisible_by_three
+            elsif divisible_by_three num
                 numbers.push "fizz"
             else
                 numbers.push num
